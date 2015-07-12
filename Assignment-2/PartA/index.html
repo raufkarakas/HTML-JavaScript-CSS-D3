@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Data Visualisation A2</title>
+	<!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+	<script type="text/javascript" src="d3/d3.js" charset="utf-8"></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script type="text/javascript" src="script.js"></script>
+	<h1>Rauf KARAKAŞ EECS 428 - Data Visualization - Assignment 2</h1>
+	<h2>Part A</h2>
+	<div>
+	<ul>
+		<li><label style="color:red"><input type="checkbox" id="f1" checked onclick=functionManager(1)>x&#178; / e&#178;</label></li>
+		<li><label style="color:green"><input type="checkbox" id="f2" checked onclick=functionManager(2)>e<span>&#8730;|x|</span></label></li>
+		<li><label style="color:blue"><input type="checkbox" id="f3" checked onclick=functionManager(3)>2.&pi;.x</label></li>
+		<li><label style="color:gray"><input type="checkbox" id="f4" checked onclick=functionManager(4)>3.x / 2</label></li>
+		<li id="rangeLabel">Range</li>
+		<li><input type="inputbox" id="fromBox" placeholder="from..."></li>
+		<li><input type="inputbox" id="toBox" placeholder="to..."></li>
+		<li><button type="button" id="updateButton" onclick=update()>Update</button></li>
+		<li id="warning">The range should be between -50 and 50.</li>
+	</ul>
+	</div>
+</body>
+</html>

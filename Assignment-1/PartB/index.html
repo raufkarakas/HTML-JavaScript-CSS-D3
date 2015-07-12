@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Data Visualisation A1</title>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Rauf KARAKAŞ EECS 428 - Data Visualization - Assignment 1</h1>
+
+<div id="calculatorDiv">
+	<table>
+		<th colspan="4"><input type=textbox id="resultBox" readonly/></th>
+		<tr>
+			<td><button type="button" class="ordinaryButton"></button></td>
+			<td><button type="button" class="ordinaryButton" onclick=buttonC()>C</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=buttonBack()>⇐</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=operator("divide")>÷</button></td>
+		</tr>
+		<tr>
+			<td><button type="button" class="ordinaryButton" onclick=numberButton("7")>7</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=numberButton("8")>8</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=numberButton("9")>9</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=operator("multiply")>×</button></td>
+		</tr>
+		<tr>
+			<td><button type="button" class="ordinaryButton" onclick=numberButton("4")>4</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=numberButton("5")>5</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=numberButton("6")>6</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=operator("subtract")>−</button></td>
+		</tr>
+		<tr>
+			<td><button type="button" class="ordinaryButton" onclick=numberButton("1")>1</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=numberButton("2")>2</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=numberButton("3")>3</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=operator("sum")>+</button></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button type="button" id="zeroButton" onclick=numberButton("0")>0</button></td>
+			<td><button type="button" class="ordinaryButton" onclick=dotButton()>.</button></td>
+			<td><button type="button" id="resultButton" onclick=buttonResult()>=</button></td>
+		</tr>
+	</table>
+
+	<p>
+	<button type="button" class="colorPalette" style="background-color: #65c7d8;" onclick=changeColor("#65c7d8")></button>
+	<button type="button" class="colorPalette" style="background-color: #229da9;" onclick=changeColor("#229da9")></button>
+	<button type="button" class="colorPalette" style="background-color: #5acb5f;" onclick=changeColor("#5acb5f")></button>
+	<button type="button" class="colorPalette" style="background-color: #bbde2d;" onclick=changeColor("#bbde2d")></button>
+	<button type="button" class="colorPalette" style="background-color: #f5db0d;" onclick=changeColor("#f5db0d")></button>
+	<button type="button" class="colorPalette" style="background-color: #fd8719;" onclick=changeColor("#fd8719")></button>
+	<button type="button" class="colorPalette" style="background-color: #f84fa3;" onclick=changeColor("#f84fa3")></button>
+	<button type="button" class="colorPalette" style="background-color: #cd4ea8;" onclick=changeColor("#cd4ea8")></button>
+	</p>
+</div>
+
+<div id="chartDiv"></div>
+
+</body>
+</html>

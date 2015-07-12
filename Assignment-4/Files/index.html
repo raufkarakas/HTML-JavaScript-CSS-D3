@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Data Visualisation A4</title>
+	<!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+	<script type="text/javascript" src="d3/d3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="d3/colorbrewer.js" charset="UTF-8"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+		<h1>Data Visualization - Assignment 4</h1>
+		<h2>Rauf KARAKAŞ - EECS 428</h2>
+		<div>
+			<table>
+				<th>Node Score Calculation</th>
+				<tr><td><form>
+					<label>Method:</label>
+					<input type="radio" class="method" name="method" value="sum" checked><label>Sum</label>
+					<input type="radio" class="method" name="method" value="max"><label>Max</label>
+				</form></td></tr>
+				<tr><td>Only Use Edge Scores Over:<input type="text" id="edgeText" value="0" readonly></td></tr>
+				<tr><td><label class="sliderLabel">0%</label><input type="range" class="method" id="methodSlider" min="0" max="100" 
+					value="0" step="1" onchange="showValue(this.value, 'edgeText')"/><label class="sliderLabel">100%</label></td></tr>
+			</table>
+
+			<table>
+				<th>Visual</th>
+				<tr><td>Show Only the Edges with Scores Over:<input type="text" id="visualText" value="0" readonly></td></tr>
+				<tr><td><label class="sliderLabel">0%</label><input type="range" class="label" id="labelSlider" min="0" max="100" 
+					value="0" step="1" onchange="showValue(this.value, 'visualText')"/><label class="sliderLabel">100%</label></td></tr>
+				<tr><td><form>
+					<label>Node Labels:</label>
+					<input type="radio" class="label" name="node" value="hide" checked><label>Hide</label>
+					<input type="radio" class="label" name="node" value="show"><label>Show</label>
+				</form></td></tr>
+			</table>
+
+			<table>
+				<th>Score Board:</th>
+				<tr><td><div id="rankBox"></div></td></tr>
+			</table>			
+
+			<div id="tooltip" class="hidden">
+		        <p><span id="name"></span></p>
+		        <p><span id="score"></span></p>
+	    	</div>
+	    </div>
+	    <svg id="chart"></svg>
+	    <script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+h1, h2{
+	text-align: center;
+}
+
+div{
+	width: 550px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	width: 130px;
+	float: left;
+	padding-right: 30px;
+}
+
+li {
+	margin-bottom: 10px;
+	color: #fd8719;
+	font-weight: bold;
+	text-align: left;
+}
+
+#rangeLabel{
+	margin-top: 60px;
+	text-align: center;
+}
+
+#updateButton{
+	border-style: none;
+	background-color: #fd8719;
+	color: #dfdfdf;
+	width: 123px;
+	height: 30px;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
+}
+
+#fromBox,
+#toBox{
+	height: 20px;
+}
+
+#chart{
+	background-color: #dfdfdf;
+	width: 350px;
+	height: 350px;
+}
+
+#warning{
+	font-size: small;
+	font-style: italic;
+	color: black;
+	text-align: center;
+}
+
+.axis path,         
+.axis line {
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+
+.axis text {         
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
+.line {
+  	fill: none;
+  	stroke: red;
+  	stroke-width: 1.5px;
+}
+
+span{
+    vertical-align:super;
+    font-size:85%;
+}
+
+
+
+
